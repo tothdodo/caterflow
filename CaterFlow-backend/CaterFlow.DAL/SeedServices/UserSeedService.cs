@@ -54,7 +54,7 @@ namespace CaterFlow.DAL.SeedServices
                     SecurityStamp = Guid.NewGuid().ToString(),
                 };
 
-                var createResult2 = await _userManager.CreateAsync(waiterUser, "#Waiter1234");
+                var createResult2 = await _userManager.CreateAsync(waiterUser, "#Admin1234");
 
                 if (!createResult2.Succeeded)
                 {
